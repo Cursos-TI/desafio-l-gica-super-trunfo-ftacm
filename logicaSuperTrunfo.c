@@ -23,6 +23,7 @@ int main() {
     printf("2. Comparar Área\n");
     printf("3. Comparar PIB\n");
     printf("4. Comparar Pontos Turísticos\n");
+    // Leitura da opção escolhida
     scanf("%d", &opcao);
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -71,6 +72,7 @@ int main() {
     scanf(" %f", &area2);
 
     printf("\nCalculando Vencedor...\n\n");
+    // Realiza o calculo do vencedor baseado na escolha do atributo a ser comparado
     switch (opcao) {
     case 1:
       if (populacao > populacao2) {
@@ -103,6 +105,7 @@ int main() {
     default:
       printf("Opção inválida\n");
     }
+    
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
